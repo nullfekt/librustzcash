@@ -3,7 +3,7 @@
 /// The mainnet coin type for ZEC, as defined by [SLIP 44].
 ///
 /// [SLIP 44]: https://github.com/satoshilabs/slips/blob/master/slip-0044.md
-pub const COIN_TYPE: u32 = 197;
+pub const COIN_TYPE: u32 = 141; //141=KMD and 197=HUSH. Using KMD as older code may rely on 0x8000008d
 
 /// The HRP for a Bech32-encoded mainnet [`ExtendedSpendingKey`].
 ///
