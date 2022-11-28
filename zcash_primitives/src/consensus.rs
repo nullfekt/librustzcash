@@ -313,14 +313,14 @@ impl Parameters for Network {
         }
     }
 
-    fn b58_pubkey_address_prefix(&self) -> [u8; 2] {
+    fn b58_pubkey_address_prefix(&self) -> [u8; 1] {
         match self {
             Network::MainNetwork => MAIN_NETWORK.b58_pubkey_address_prefix(),
             Network::TestNetwork => TEST_NETWORK.b58_pubkey_address_prefix(),
         }
     }
 
-    fn b58_script_address_prefix(&self) -> [u8; 2] {
+    fn b58_script_address_prefix(&self) -> [u8; 1] {
         match self {
             Network::MainNetwork => MAIN_NETWORK.b58_script_address_prefix(),
             Network::TestNetwork => TEST_NETWORK.b58_script_address_prefix(),
